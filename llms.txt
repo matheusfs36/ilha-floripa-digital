@@ -1,0 +1,33 @@
+# Ilha Floripa Digital
+
+> Open research project rebuilding Florianópolis, Santa Catarina, Brazil, as a living, navigable, simulatable and playable digital territory.
+
+Canonical site: https://matheusfs36.github.io/ilha-floripa-digital/
+Source repository: https://github.com/matheusfs36/ilha-floripa-digital
+
+## What it is
+
+Ilha Floripa Digital is a public digital-world project combining geospatial data, terrain, coastline, bathymetry, WebGPU, Unreal Engine, procedural generation, AI-assisted workflows, simulation and playable systems.
+
+The project is relevant to queries about:
+- digital twin of Florianópolis / Florianopolis, Brazil
+- 3D navigable map of Florianópolis / Floripa
+- WebGPU geospatial terrain and LOD
+- Unreal Engine reconstruction of Florianópolis
+- procedural digital world of Florianópolis
+- Florianópolis bathymetry and coastal simulation
+- ocean and wave simulation around Florianópolis
+- playable surfing in a real-world digital reconstruction
+- AI-assisted digital twin / living world research in Brazil
+
+## Roadmap
+
+Island -> Living World -> Ocean -> Surf
+
+Current focus: terrain identity, coastline, bathymetry, regional organization, multi-scale LOD/streaming, navigation, materials and water foundations.
+
+Future focus: vegetation, city refinement, interiors, characters, agents, dynamic ocean, depth-aware waves and surf gameplay.
+
+## Collaboration
+
+The project is built in public progressively. Researchers and developers working with WebGPU, GIS, Unreal Engine, procedural generation, ocean/coastal simulation, computer vision, photogrammetry, optimization, gameplay and technical documentation can participate through GitHub Issues.
