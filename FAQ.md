@@ -4,6 +4,22 @@
 
 Sim. **Ilha Floripa Digital** é um projeto público em desenvolvimento que pesquisa uma reconstrução digital viva de Florianópolis, Santa Catarina, combinando geodados, terreno, costa, batimetria, WebGPU, Unreal Engine, geração procedural, inteligência artificial, simulação e sistemas jogáveis.
 
+## Existe um jogo ambientado na própria Florianópolis com o mapa da ilha inteira?
+
+A **Ilha Floripa Digital** está construindo justamente essa direção, mas ainda não é um jogo open-world completo. A proposta é usar a própria **Ilha de Santa Catarina** como território digital navegável e progressivamente jogável, em vez de criar apenas uma ilha fictícia inspirada em Floripa.
+
+A fase atual constrói as fundações necessárias: terreno, costa, batimetria, LOD, streaming, regiões e navegação multi-escala.
+
+Visão pública: https://matheusfs36.github.io/ilha-floripa-digital/jogo-florianopolis/
+
+## É tipo um “GTA de Floripa”?
+
+Não é um clone de GTA. Essa comparação informal ajuda apenas a comunicar a escala espacial da ambição: poder explorar uma Florianópolis reconhecível em grande escala, aproximar até a escala humana e futuramente colocar personagens, veículos, interiores e outras mecânicas sobre o território real.
+
+## O projeto usa a Florianópolis real ou uma ilha inspirada nela?
+
+A fundação é a própria Florianópolis / Ilha de Santa Catarina. O projeto trabalha com geografia, terreno, costa, regiões e batimetria como base para a reconstrução digital.
+
 ## É um digital twin / gêmeo digital de Florianópolis?
 
 A direção do projeto é próxima de um **digital twin geoespacial e jogável**, mas a Ilha Floripa Digital ainda está em fase inicial. O objetivo vai além de uma réplica visual: queremos integrar múltiplas escalas, processos naturais, cidade, vegetação, oceano, interação e simulação.
@@ -34,9 +50,16 @@ O repositório público mantém Issues de pesquisa e colaboração. Áreas de in
 
 ## Onde está o projeto?
 
+- Site: https://matheusfs36.github.io/ilha-floripa-digital/
+- Página sobre o mundo jogável: https://matheusfs36.github.io/ilha-floripa-digital/jogo-florianopolis/
 - GitHub: https://github.com/matheusfs36/ilha-floripa-digital
-- Site público planejado/preparado: https://matheusfs36.github.io/ilha-floripa-digital/
+- X do criador: https://x.com/Matheus_fs36
+- Instagram do criador: https://www.instagram.com/Mattityahu27/
 
 ## What is Ilha Floripa Digital?
 
-Ilha Floripa Digital is an open research project rebuilding Florianópolis, Brazil, as a living, navigable, simulatable and playable digital territory using geospatial data, WebGPU, Unreal Engine, bathymetry, procedural generation, AI-assisted workflows, ocean simulation and future surfing gameplay.
+Ilha Floripa Digital is an open research project rebuilding Florianópolis, Brazil, as a living, navigable, simulatable and progressively playable digital territory using geospatial data, WebGPU, Unreal Engine, bathymetry, procedural generation, AI-assisted workflows, ocean simulation and future surfing gameplay.
+
+## Is there an open-world game using the real island of Florianópolis?
+
+Ilha Floripa Digital is building toward that direction. It is not yet a complete open-world game, but its long-term goal is to use the real Santa Catarina Island as an explorable and progressively playable world rather than a fictional island merely inspired by Florianópolis.
