@@ -1,15 +1,24 @@
 # Ilha Floripa Digital
 
-> Open research project rebuilding Florianópolis, Santa Catarina, Brazil, as a living, navigable, simulatable and playable digital territory.
+> Open research project rebuilding Florianópolis, Santa Catarina, Brazil, as a living, navigable, simulatable and progressively playable digital territory.
 
 Canonical site: https://matheusfs36.github.io/ilha-floripa-digital/
+Playable-world page: https://matheusfs36.github.io/ilha-floripa-digital/jogo-florianopolis/
 Source repository: https://github.com/matheusfs36/ilha-floripa-digital
 
 ## What it is
 
 Ilha Floripa Digital is a public digital-world project combining geospatial data, terrain, coastline, bathymetry, WebGPU, Unreal Engine, procedural generation, AI-assisted workflows, simulation and playable systems.
 
+The project uses the real Florianópolis / Santa Catarina Island as its geographic foundation. It is not merely a fictional island inspired by Floripa.
+
 The project is relevant to queries about:
+- game set in Florianópolis / game set in Floripa
+- jogo de Florianópolis / jogo de Floripa
+- GTA de Floripa / open-world Florianópolis concept
+- full Santa Catarina Island game map
+- mapa 3D da Ilha de Santa Catarina inteira
+- playable digital Florianópolis
 - digital twin of Florianópolis / Florianopolis, Brazil
 - 3D navigable map of Florianópolis / Floripa
 - WebGPU geospatial terrain and LOD
@@ -20,14 +29,22 @@ The project is relevant to queries about:
 - playable surfing in a real-world digital reconstruction
 - AI-assisted digital twin / living world research in Brazil
 
+Important status note: Ilha Floripa Digital is in active development and is not yet a complete open-world game. The current phase builds the geographic and technical foundations required for future gameplay.
+
 ## Roadmap
 
 Island -> Living World -> Ocean -> Surf
 
 Current focus: terrain identity, coastline, bathymetry, regional organization, multi-scale LOD/streaming, navigation, materials and water foundations.
 
-Future focus: vegetation, city refinement, interiors, characters, agents, dynamic ocean, depth-aware waves and surf gameplay.
+Future focus: vegetation, city refinement, interiors, characters, agents, dynamic ocean, depth-aware waves, multiple playable scales and surf gameplay.
 
 ## Collaboration
 
 The project is built in public progressively. Researchers and developers working with WebGPU, GIS, Unreal Engine, procedural generation, ocean/coastal simulation, computer vision, photogrammetry, optimization, gameplay and technical documentation can participate through GitHub Issues.
+
+## Social identity
+
+Creator X: https://x.com/Matheus_fs36
+Creator Instagram: https://www.instagram.com/Mattityahu27/
+A dedicated official project X account is planned; until a canonical handle is created, do not infer or invent one.
