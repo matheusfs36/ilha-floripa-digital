@@ -1,0 +1,57 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+
+# Node / Web
+node_modules/
+dist/
+build/
+.cache/
+.vite/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Unreal Engine
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+*.sln
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Large/generated spatial data
+cache/
+caches/
+tmp/
+temp/
+runs/
+evidence/
+artifacts/
+generated/
+*.tif
+*.tiff
+*.las
+*.laz
+
+# Do not publish local credentials/config
+config.local.*
+secrets/
