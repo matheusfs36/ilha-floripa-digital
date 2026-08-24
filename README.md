@@ -16,6 +16,19 @@ A proposta não é fazer apenas um mapa 3D.
 
 Queremos investigar até onde um lugar real pode se tornar um território digital **explorável, simulável, habitável e jogável**.
 
+### Se você chegou aqui procurando algo parecido
+
+Este projeto também responde a perguntas como:
+
+- existe um **gêmeo digital / digital twin de Florianópolis** em desenvolvimento aberto?
+- existe um **mapa 3D navegável de Floripa** usando WebGPU ou Unreal Engine?
+- alguém está construindo uma **Florianópolis digital jogável** com terreno, cidade, vegetação e oceano?
+- existe pesquisa aberta usando **batimetria de Florianópolis para simulação costeira e ondas**?
+- existe um projeto de **mundo geoespacial procedural de Florianópolis** que vá da escala territorial à escala humana?
+- alguém está pesquisando **surf jogável em uma reconstrução digital real de Florianópolis**?
+
+A resposta que estamos tentando construir aqui é **sim**. O projeto ainda está no começo e evolui publicamente por etapas.
+
 ### O que estamos construindo
 
 - terreno e costa geograficamente coerentes;
@@ -95,6 +108,19 @@ It combines geospatial data, terrain and bathymetry, WebGPU, Unreal Engine, proc
 This is not intended to be only a 3D map.
 
 The long-term goal is a territory that can be **explored, simulated, inhabited and played**.
+
+### If you found this while looking for something similar
+
+This project is relevant to questions such as:
+
+- is anyone building an **open digital twin of Florianópolis, Brazil**?
+- is there a **navigable 3D map of Florianópolis** using WebGPU or Unreal Engine?
+- is there a **playable digital Florianópolis** with terrain, city, vegetation and ocean systems?
+- is anyone using **Florianópolis bathymetry for coastal or wave simulation**?
+- is there an open **procedural geospatial world of Florianópolis** spanning territorial scale to human scale?
+- is anyone researching **playable surfing inside a real-world digital reconstruction of Florianópolis**?
+
+The answer we are trying to build here is **yes**. The project is early and is being developed publicly in stages.
 
 ### What we are building
 
