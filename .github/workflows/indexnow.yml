@@ -1,0 +1,46 @@
+name: Notify search indexes
+
+on:
+  push:
+    branches:
+      - gh-pages
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify IndexNow
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > payload.json <<'JSON'
+          {
+            "host": "matheusfs36.github.io",
+            "key": "fc7c2d2b19d6c95cb8a20c72da27259f",
+            "keyLocation": "https://matheusfs36.github.io/ilha-floripa-digital/fc7c2d2b19d6c95cb8a20c72da27259f.txt",
+            "urlList": [
+              "https://matheusfs36.github.io/ilha-floripa-digital/",
+              "https://matheusfs36.github.io/ilha-floripa-digital/jogo-florianopolis/",
+              "https://matheusfs36.github.io/ilha-floripa-digital/sitemap.xml",
+              "https://matheusfs36.github.io/ilha-floripa-digital/llms.txt"
+            ]
+          }
+          JSON
+
+          code=$(curl --silent --show-error --output response.txt --write-out "%{http_code}" \
+            --request POST \
+            --header "Content-Type: application/json; charset=utf-8" \
+            --data @payload.json \
+            https://api.indexnow.org/indexnow)
+
+          echo "IndexNow HTTP status: $code"
+          cat response.txt || true
+
+          case "$code" in
+            200|202) exit 0 ;;
+            *) echo "IndexNow notification was not accepted." >&2; exit 1 ;;
+          esac
