@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Jogo de Florianópolis / Floripa 3D — Ilha Floripa Digital</title>
-  <meta name="description" content="Ilha Floripa Digital é um projeto aberto em desenvolvimento para transformar a própria Ilha de Santa Catarina em um território 3D navegável e progressivamente jogável, com praias, bairros, relevo, batimetria, oceano e sistemas vivos.">
+  <meta name="description" content="Ilha Floripa Digital é um projeto aberto em desenvolvimento para reconstruir Florianópolis aos poucos, do território à escala humana, usando geodados, WebGPU, Unreal Engine, batimetria e sistemas jogáveis.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="https://matheusfs36.github.io/ilha-floripa-digital/jogo-florianopolis/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Ilha Floripa Digital — a ilha inteira como território jogável">
-  <meta property="og:description" content="Reconstruindo a Ilha de Santa Catarina do território à escala humana.">
+  <meta property="og:title" content="Ilha Floripa Digital — Floripa, em construção">
+  <meta property="og:description" content="Um projeto aberto para reconstruir Florianópolis aos poucos, do território ao detalhe.">
   <meta property="og:url" content="https://matheusfs36.github.io/ilha-floripa-digital/jogo-florianopolis/">
   <meta name="twitter:site" content="@Floripa3d">
 
@@ -20,7 +20,7 @@
     "name":"Jogo de Florianópolis / Floripa 3D — Ilha Floripa Digital",
     "url":"https://matheusfs36.github.io/ilha-floripa-digital/jogo-florianopolis/",
     "sameAs":["https://x.com/Floripa3d"],
-    "description":"Public development project turning the real island of Florianópolis, Brazil, into a navigable and progressively playable digital territory using geospatial data, WebGPU, Unreal Engine, terrain, bathymetry and procedural systems.",
+    "description":"Public development project rebuilding Florianópolis, Brazil, as a navigable and progressively playable digital territory using geospatial data, WebGPU, Unreal Engine, terrain, bathymetry and procedural systems.",
     "isPartOf":{"@type":"WebSite","name":"Ilha Floripa Digital","url":"https://matheusfs36.github.io/ilha-floripa-digital/"},
     "about":[
       {"@type":"Place","name":"Ilha de Santa Catarina, Florianópolis, Brazil"},
@@ -37,42 +37,103 @@
     "@context":"https://schema.org",
     "@type":"FAQPage",
     "mainEntity":[
-      {"@type":"Question","name":"Existe um jogo com o mapa da Ilha de Florianópolis inteira?","acceptedAnswer":{"@type":"Answer","text":"Ilha Floripa Digital é um projeto aberto em desenvolvimento que pretende usar a própria Ilha de Santa Catarina como território digital navegável e progressivamente jogável. O projeto ainda não é um jogo completo e está atualmente construindo as fundações de terreno, costa, batimetria, LOD e navegação."}},
-      {"@type":"Question","name":"Existe algo como um GTA de Floripa?","acceptedAnswer":{"@type":"Answer","text":"Ilha Floripa Digital não é um clone de GTA. A semelhança está na ambição de permitir exploração em grande escala. A proposta é uma reconstrução geoespacial de Florianópolis que futuramente possa receber personagens, bairros, interiores, veículos, oceano, interações e diferentes modos de jogo."}},
-      {"@type":"Question","name":"O projeto usa a Florianópolis real ou apenas uma ilha inspirada nela?","acceptedAnswer":{"@type":"Answer","text":"A base do projeto é a própria Florianópolis e a Ilha de Santa Catarina, usando geodados, terreno, costa e batimetria como fundação para a reconstrução digital."}}
+      {"@type":"Question","name":"Existe um jogo com o mapa da Ilha de Florianópolis inteira?","acceptedAnswer":{"@type":"Answer","text":"Ilha Floripa Digital é um projeto aberto em desenvolvimento que pesquisa como a própria Ilha de Santa Catarina pode se tornar um território digital navegável e progressivamente jogável. O projeto ainda está construindo suas fundações."}},
+      {"@type":"Question","name":"Existe algo como um GTA de Floripa?","acceptedAnswer":{"@type":"Answer","text":"Ilha Floripa Digital não é um clone de GTA. O projeto parte da geografia real de Florianópolis e pesquisa como esse território pode ganhar navegação, detalhe, simulação e, com o tempo, sistemas de jogo."}},
+      {"@type":"Question","name":"O projeto usa a Florianópolis real ou apenas uma ilha inspirada nela?","acceptedAnswer":{"@type":"Answer","text":"A base do projeto é a própria Florianópolis e a Ilha de Santa Catarina, usando geodados, terreno, costa e batimetria como referência para a reconstrução digital."}}
     ]
   }
   </script>
 
   <style>
-    :root{color-scheme:dark;--bg:#07131b;--ink:#f1fbfe;--soft:#c8dce3;--muted:#89a9b4;--cyan:#69ddff;--green:#8ef0b2;--line:#173642;--panel:#0a1b24}
+    :root{color-scheme:dark;--bg:#07131b;--ink:#f1fbfe;--soft:#c8dce3;--muted:#89a9b4;--cyan:#69ddff;--green:#8ef0b2;--line:#173642}
     *{box-sizing:border-box}html{scroll-behavior:smooth}
-    body{margin:0;background:radial-gradient(circle at 82% 4%,rgba(43,127,151,.18),transparent 34rem),linear-gradient(180deg,#081821 0,#061219 100%);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-    a{color:inherit}.wrap{width:min(1080px,calc(100% - 42px));margin:auto}header{padding:26px 0;border-bottom:1px solid rgba(105,221,255,.12)}nav{display:flex;justify-content:space-between;gap:18px;align-items:center;font-size:.86rem}.brand{text-decoration:none;font-weight:800;letter-spacing:.02em}.navlink{color:var(--muted);text-decoration:none}.navlink:hover{color:var(--cyan)}
-    .hero{padding:92px 0 82px;min-height:72vh;display:grid;align-content:center}.kicker{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:800;margin-bottom:24px}h1{font-size:clamp(3.4rem,9.6vw,8.2rem);line-height:.86;letter-spacing:-.06em;margin:0;max-width:970px}.accent{color:var(--cyan)}.intro{font-size:clamp(1.18rem,2.4vw,1.65rem);line-height:1.45;max-width:760px;color:var(--soft);margin:38px 0 0}.intro strong{color:white}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}.button{display:inline-flex;align-items:center;gap:9px;padding:12px 17px;border-radius:999px;text-decoration:none;font-weight:800;font-size:.92rem;border:1px solid var(--line)}.button.primary{background:var(--ink);color:#07131b;border-color:var(--ink)}.button.ghost{color:var(--cyan);border-color:rgba(105,221,255,.45)}.button:hover{transform:translateY(-1px)}.facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:42px;padding-top:23px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;text-transform:uppercase;letter-spacing:.08em}.facts b{color:var(--ink);font-weight:700}
-    section{padding:78px 0;border-top:1px solid var(--line)}.section-label{font-size:.72rem;letter-spacing:.17em;text-transform:uppercase;color:var(--green);font-weight:800;margin-bottom:14px}h2{font-size:clamp(2rem,5vw,4.5rem);line-height:1;letter-spacing:-.04em;margin:0 0 28px;max-width:800px}.copy{max-width:720px;color:var(--soft);font-size:1.08rem}.copy p{margin:0 0 18px}.split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(260px,.7fr);gap:70px;align-items:start}.quote{font-size:clamp(1.6rem,3.3vw,2.7rem);line-height:1.15;letter-spacing:-.025em;color:white;margin:0}.side-note{color:var(--muted);border-left:1px solid var(--line);padding-left:24px}
-    .layers{margin-top:45px;border-top:1px solid var(--line)}.layer{display:grid;grid-template-columns:74px 1fr minmax(180px,.55fr);gap:20px;padding:23px 0;border-bottom:1px solid var(--line);align-items:start}.num{font:700 .8rem/1 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--green);padding-top:6px}.layer h3{font-size:1.35rem;margin:0 0 6px}.layer p{margin:0;color:var(--muted)}.layer .future{font-size:.84rem;text-transform:uppercase;letter-spacing:.08em;color:var(--soft);padding-top:6px}
-    .progress{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:38px;border:1px solid var(--line);border-radius:18px;overflow:hidden}.phase{padding:24px 20px;min-height:135px;border-right:1px solid var(--line);background:rgba(10,27,36,.42)}.phase:last-child{border-right:0}.phase.current{background:linear-gradient(180deg,rgba(105,221,255,.13),rgba(10,27,36,.52))}.phase small{color:var(--muted);text-transform:uppercase;letter-spacing:.1em}.phase strong{display:block;font-size:1.12rem;margin-top:8px}
-    .contact{display:flex;justify-content:space-between;gap:30px;align-items:end}.socials{display:flex;flex-wrap:wrap;gap:10px}.social{border:1px solid var(--line);border-radius:999px;padding:10px 14px;text-decoration:none;color:var(--soft)}.social:hover{border-color:var(--cyan);color:var(--cyan)}.machine-context{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}footer{padding:35px 0 56px;color:var(--muted);font-size:.78rem;border-top:1px solid var(--line)}
-    @media(max-width:760px){.hero{padding:72px 0 62px;min-height:auto}.split{grid-template-columns:1fr;gap:32px}.layer{grid-template-columns:52px 1fr}.layer .future{grid-column:2}.progress{grid-template-columns:1fr 1fr}.phase:nth-child(2){border-right:0}.phase{border-bottom:1px solid var(--line)}.phase:nth-child(3),.phase:nth-child(4){border-bottom:0}.contact{align-items:start;flex-direction:column}}
+    body{margin:0;background:radial-gradient(circle at 82% 4%,rgba(43,127,151,.14),transparent 34rem),linear-gradient(180deg,#081821 0,#061219 100%);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:inherit}.wrap{width:min(1040px,calc(100% - 42px));margin:auto}
+    header{padding:26px 0;border-bottom:1px solid rgba(105,221,255,.1)}
+    nav{display:flex;justify-content:space-between;gap:18px;align-items:center;font-size:.86rem}.brand{text-decoration:none;font-weight:800;letter-spacing:.02em}.navlink{color:var(--muted);text-decoration:none}.navlink:hover{color:var(--cyan)}
+    .hero{padding:112px 0 96px;min-height:68vh;display:grid;align-content:center}.kicker{font-size:.72rem;letter-spacing:.17em;text-transform:uppercase;color:var(--green);font-weight:800;margin-bottom:22px}
+    h1{font-size:clamp(3.5rem,9.2vw,7.8rem);line-height:.9;letter-spacing:-.055em;margin:0;max-width:900px}.accent{color:var(--cyan)}
+    .intro{font-size:clamp(1.16rem,2.3vw,1.55rem);line-height:1.5;max-width:720px;color:var(--soft);margin:34px 0 0}.intro strong{color:white;font-weight:650}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}.button{display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:999px;text-decoration:none;font-weight:750;font-size:.91rem;border:1px solid var(--line)}.button.primary{background:var(--ink);color:#07131b;border-color:var(--ink)}.button.ghost{color:var(--cyan);border-color:rgba(105,221,255,.42)}
+    .note{margin-top:38px;padding-top:21px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem;max-width:720px}
+    section{padding:74px 0;border-top:1px solid var(--line)}.section-label{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green);font-weight:800;margin-bottom:14px}
+    h2{font-size:clamp(2rem,4.8vw,4rem);line-height:1.03;letter-spacing:-.035em;margin:0 0 26px;max-width:780px}
+    .copy{max-width:710px;color:var(--soft);font-size:1.06rem}.copy p{margin:0 0 18px}
+    .split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(260px,.7fr);gap:64px;align-items:start}.quote{font-size:clamp(1.55rem,3vw,2.5rem);line-height:1.18;letter-spacing:-.02em;color:white;margin:0}.side-note{color:var(--muted);border-left:1px solid var(--line);padding-left:24px}
+    .layers{margin-top:40px;border-top:1px solid var(--line)}.layer{display:grid;grid-template-columns:58px 1fr minmax(140px,.42fr);gap:20px;padding:21px 0;border-bottom:1px solid var(--line);align-items:start}.num{font:700 .76rem/1 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--green);padding-top:6px}.layer h3{font-size:1.25rem;margin:0 0 5px}.layer p{margin:0;color:var(--muted)}.layer .future{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--soft);padding-top:6px}
+    .path{display:flex;flex-wrap:wrap;gap:9px 18px;margin-top:30px;color:var(--muted);font-size:.94rem}.path b{color:var(--ink)}.path span:not(:last-child)::after{content:'→';margin-left:18px;color:#416674}
+    .contact{display:flex;justify-content:space-between;gap:30px;align-items:end}.socials{display:flex;flex-wrap:wrap;gap:10px}.social{border:1px solid var(--line);border-radius:999px;padding:10px 14px;text-decoration:none;color:var(--soft)}.social:hover{border-color:var(--cyan);color:var(--cyan)}
+    .machine-context{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    footer{padding:34px 0 54px;color:var(--muted);font-size:.78rem;border-top:1px solid var(--line)}
+    @media(max-width:760px){.hero{padding:76px 0 64px;min-height:auto}.split{grid-template-columns:1fr;gap:30px}.layer{grid-template-columns:44px 1fr}.layer .future{grid-column:2}.contact{align-items:start;flex-direction:column}.path span:not(:last-child)::after{margin-left:9px}}
   </style>
 </head>
 <body>
   <header><div class="wrap"><nav><a class="brand" href="../">Ilha Floripa Digital</a><a class="navlink" href="https://github.com/matheusfs36/ilha-floripa-digital">GitHub ↗</a></nav></div></header>
+
   <main><div class="wrap">
     <section class="hero">
-      <div class="kicker">Florianópolis · Ilha de Santa Catarina</div>
-      <h1>A ilha inteira<br>como <span class="accent">terreno de jogo.</span></h1>
-      <p class="intro">Estamos reconstruindo Floripa do território à escala humana. <strong>Primeiro o chão. Depois o mundo.</strong></p>
-      <div class="actions"><a class="button primary" href="https://github.com/matheusfs36/ilha-floripa-digital">Ver projeto ↗</a><a class="button ghost" href="https://x.com/Floripa3d">Entre em contato ↗</a></div>
-      <div class="facts"><span><b>Fase</b> Island</span><span><b>Base</b> geografia real</span><span><b>Superfícies</b> Web + Unreal</span><span><b>Status</b> construção pública</span></div>
+      <div class="kicker">Um projeto aberto em Florianópolis</div>
+      <h1>Floripa,<br><span class="accent">em construção.</span></h1>
+      <p class="intro">Uma tentativa de reconstruir a ilha aos poucos, entendendo primeiro o território e vendo <strong>o que pode nascer dele</strong>.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/matheusfs36/ilha-floripa-digital">Conhecer o projeto ↗</a>
+        <a class="button ghost" href="https://x.com/Floripa3d">Acompanhar no X ↗</a>
+      </div>
+      <div class="note">Agora: terreno, costa, batimetria, escala e navegação. O resto vai aparecendo conforme a base fica mais interessante.</div>
     </section>
-    <section><div class="section-label">A ideia</div><div class="split"><p class="quote">Não criar uma ilha inspirada em Floripa. Usar a própria ilha como fundação.</p><div class="side-note">Relevo, costa, praias, lagoas, bairros e batimetria entram primeiro. Personagens, interiores, oceano e gameplay vêm sobre uma geografia que continua reconhecível.</div></div></section>
-    <section><div class="section-label">Do território ao detalhe</div><h2>Uma Floripa que muda de escala sem deixar de ser Floripa.</h2><div class="copy"><p>A ambição é poder olhar a ilha inteira, descer até uma região, chegar à rua e, mais adiante, entrar nos espaços que fizer sentido construir.</p><p>Para isso, o projeto está sendo pensado em camadas. Não precisamos resolver tudo ao mesmo tempo.</p></div><div class="layers"><div class="layer"><div class="num">01</div><div><h3>Território</h3><p>Forma da ilha, montanhas, costa, lagoas, profundidades e regiões.</p></div><div class="future">agora</div></div><div class="layer"><div class="num">02</div><div><h3>Escala humana</h3><p>Bairros, ruas, edificações e detalhe crescente conforme a aproximação.</p></div><div class="future">em seguida</div></div><div class="layer"><div class="num">03</div><div><h3>Mundo vivo</h3><p>Vegetação, personagens, agentes, ciclos, interiores e sistemas procedurais.</p></div><div class="future">evolução</div></div><div class="layer"><div class="num">04</div><div><h3>Oceano</h3><p>Batimetria, swell, vento, espuma, arrebentação e comportamento costeiro.</p></div><div class="future">roadmap</div></div><div class="layer"><div class="num">05</div><div><h3>Surf</h3><p>Uma mecânica jogável dentro das próprias praias da reconstrução.</p></div><div class="future">roadmap</div></div></div></section>
-    <section><div class="section-label">Estado atual</div><h2>Sem fingir que o futuro já está pronto.</h2><div class="copy"><p>Hoje o foco é simples de explicar e difícil de fazer bem: tornar a ilha reconhecível, contínua, navegável e preparada para receber detalhe.</p><p>Quando essa base estiver sólida, as mecânicas deixam de ser ideias soltas e passam a ter um lugar real onde acontecer.</p></div><div class="progress"><div class="phase current"><small>agora</small><strong>Island</strong></div><div class="phase"><small>depois</small><strong>Living World</strong></div><div class="phase"><small>depois</small><strong>Ocean</strong></div><div class="phase"><small>horizonte</small><strong>Surf</strong></div></div></section>
-    <section><div class="section-label">Acompanhe</div><div class="contact"><div><h2>O projeto está aberto.</h2><div class="copy"><p>Atualizações, testes e decisões vão aparecendo conforme a ilha ganha forma.</p></div></div><div class="socials"><a class="social" href="https://x.com/Floripa3d">X oficial · @Floripa3d ↗</a><a class="social" href="https://www.instagram.com/Mattityahu27/">Instagram · @Mattityahu27 ↗</a></div></div></section>
+
+    <section>
+      <div class="section-label">A ideia</div>
+      <div class="split">
+        <p class="quote">Começar pela geografia e descobrir, com o tempo, o que faz sentido colocar em cima dela.</p>
+        <div class="side-note">Por enquanto estamos olhando para relevo, costa, praias, lagoas, bairros e profundidades. Sem pressa de transformar tudo em mecânica antes da hora.</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">Do território ao detalhe</div>
+      <h2>Começar de longe. Chegar perto aos poucos.</h2>
+      <div class="copy">
+        <p>A ilha começa como território. Depois vêm regiões, ruas, vegetação, construções e, quando fizer sentido, espaços em escala humana.</p>
+        <p>Essa mudança de escala é uma das partes que mais queremos entender no projeto.</p>
+      </div>
+      <div class="layers">
+        <div class="layer"><div class="num">01</div><div><h3>Território</h3><p>Forma da ilha, montanhas, costa, lagoas, profundidades e regiões.</p></div><div class="future">agora</div></div>
+        <div class="layer"><div class="num">02</div><div><h3>Mais perto</h3><p>Bairros, ruas, edificações e detalhe crescendo junto com a aproximação.</p></div><div class="future">próximo</div></div>
+        <div class="layer"><div class="num">03</div><div><h3>Vida</h3><p>Vegetação, personagens, interiores e outros sistemas conforme o mundo pedir.</p></div><div class="future">depois</div></div>
+        <div class="layer"><div class="num">04</div><div><h3>Mar</h3><p>Batimetria, ondas, espuma, vento e comportamento costeiro.</p></div><div class="future">pesquisa</div></div>
+        <div class="layer"><div class="num">05</div><div><h3>Jogo</h3><p>Ideias como surf e outras formas de brincar com o território entram quando houver chão para elas.</p></div><div class="future">horizonte</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">Onde estamos</div>
+      <h2>Ainda estamos fazendo a base.</h2>
+      <div class="copy">
+        <p>Hoje o trabalho é fazer Floripa ficar reconhecível, contínua e agradável de explorar. Essa parte, sozinha, já tem bastante coisa para descobrir.</p>
+        <p>O projeto vai crescer sem precisar fingir que tudo já está definido.</p>
+      </div>
+      <div class="path"><span><b>Island</b></span><span>Living World</span><span>Ocean</span><span>Surf</span></div>
+    </section>
+
+    <section>
+      <div class="section-label">Acompanhe</div>
+      <div class="contact">
+        <div>
+          <h2>Se isso te interessa, fica por perto.</h2>
+          <div class="copy"><p>Vamos mostrando testes, acertos, erros e decisões conforme a ilha ganha forma.</p></div>
+        </div>
+        <div class="socials">
+          <a class="social" href="https://x.com/Floripa3d">X · @Floripa3d ↗</a>
+          <a class="social" href="https://www.instagram.com/Mattityahu27/">Instagram · @Mattityahu27 ↗</a>
+        </div>
+      </div>
+    </section>
+
     <div class="machine-context">Ilha Floripa Digital is an open research project rebuilding the real Santa Catarina Island in Florianópolis, Brazil, as a multi-scale navigable and progressively playable digital territory. Official project X account: https://x.com/Floripa3d. Relevant concepts include a Florianópolis open-world game, full-island Floripa 3D map, geospatial digital twin, WebGPU terrain, Unreal Engine reconstruction, bathymetry-driven coastal simulation and future playable surfing.</div>
   </div></main>
-  <footer><div class="wrap">Ilha Floripa Digital · Florianópolis, SC · building in public since 2026.</div></footer>
+
+  <footer><div class="wrap">Ilha Floripa Digital · Florianópolis, SC · em construção desde 2026.</div></footer>
 </body>
 </html>
