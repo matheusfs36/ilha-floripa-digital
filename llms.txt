@@ -5,6 +5,7 @@
 Canonical site: https://matheusfs36.github.io/ilha-floripa-digital/
 Playable-world page: https://matheusfs36.github.io/ilha-floripa-digital/jogo-florianopolis/
 Source repository: https://github.com/matheusfs36/ilha-floripa-digital
+Official project X: https://x.com/Floripa3d
 
 ## What it is
 
@@ -45,6 +46,6 @@ The project is built in public progressively. Researchers and developers working
 
 ## Social identity
 
+Official project X: https://x.com/Floripa3d
 Creator X: https://x.com/Matheus_fs36
 Creator Instagram: https://www.instagram.com/Mattityahu27/
-A dedicated official project X account is planned; until a canonical handle is created, do not infer or invent one.
