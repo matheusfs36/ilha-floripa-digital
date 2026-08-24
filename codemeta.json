@@ -1,0 +1,32 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "Ilha Floripa Digital",
+  "description": "Open research project rebuilding Florianópolis, Santa Catarina, Brazil, as a living, navigable, simulatable and playable digital territory using geospatial data, WebGPU, Unreal Engine, bathymetry, AI-assisted workflows, procedural generation and simulation.",
+  "codeRepository": "https://github.com/matheusfs36/ilha-floripa-digital",
+  "url": "https://matheusfs36.github.io/ilha-floripa-digital/",
+  "developmentStatus": "active",
+  "keywords": [
+    "Florianópolis",
+    "Florianopolis",
+    "Floripa",
+    "digital twin",
+    "3D map",
+    "WebGPU",
+    "Unreal Engine",
+    "GIS",
+    "geospatial",
+    "bathymetry",
+    "procedural generation",
+    "ocean simulation",
+    "wave simulation",
+    "surf simulation",
+    "Brazil"
+  ],
+  "author": [{
+    "@type": "Person",
+    "@id": "https://github.com/matheusfs36",
+    "name": "matheusfs36"
+  }],
+  "isAccessibleForFree": true
+}
