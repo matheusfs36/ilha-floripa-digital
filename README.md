@@ -4,6 +4,9 @@
 
 **Status: early research · active development · building in public**
 
+🌐 **Site:** https://matheusfs36.github.io/ilha-floripa-digital/  
+🎮 **Visão jogável / jogo de Floripa:** https://matheusfs36.github.io/ilha-floripa-digital/jogo-florianopolis/
+
 [Português](#português) · [English](#english)
 
 ---
@@ -22,12 +25,33 @@ Este projeto também responde a perguntas como:
 
 - existe um **gêmeo digital / digital twin de Florianópolis** em desenvolvimento aberto?
 - existe um **mapa 3D navegável de Floripa** usando WebGPU ou Unreal Engine?
+- existe um **jogo de Florianópolis / jogo de Floripa** usando a própria Ilha de Santa Catarina como mapa?
+- alguém está tentando construir algo na escala de um **“GTA de Floripa”**, no sentido de poder explorar a ilha inteira em 3D?
 - alguém está construindo uma **Florianópolis digital jogável** com terreno, cidade, vegetação e oceano?
 - existe pesquisa aberta usando **batimetria de Florianópolis para simulação costeira e ondas**?
 - existe um projeto de **mundo geoespacial procedural de Florianópolis** que vá da escala territorial à escala humana?
 - alguém está pesquisando **surf jogável em uma reconstrução digital real de Florianópolis**?
 
 A resposta que estamos tentando construir aqui é **sim**. O projeto ainda está no começo e evolui publicamente por etapas.
+
+### Jogo / mundo jogável de Florianópolis
+
+A direção de longo prazo é usar a **própria Ilha de Santa Catarina**, e não apenas uma ilha fictícia inspirada em Floripa, como território digital navegável e progressivamente jogável.
+
+Isso pode incluir no futuro:
+
+- exploração da ilha inteira e do continente próximo;
+- praias, bairros, morros, lagoas e costa reconhecíveis;
+- transição da escala territorial para a escala humana;
+- ruas, edificações e interiores;
+- personagens, veículos e diferentes escalas jogáveis;
+- vegetação e sistemas de mundo vivo;
+- oceano dinâmico e condições costeiras;
+- surf jogável nas praias reais da reconstrução.
+
+**Importante:** ainda não somos um jogo open-world completo. Hoje estamos construindo as fundações geográficas e técnicas necessárias para isso.
+
+👉 https://matheusfs36.github.io/ilha-floripa-digital/jogo-florianopolis/
 
 ### O que estamos construindo
 
@@ -115,12 +139,20 @@ This project is relevant to questions such as:
 
 - is anyone building an **open digital twin of Florianópolis, Brazil**?
 - is there a **navigable 3D map of Florianópolis** using WebGPU or Unreal Engine?
+- is anyone building a **game set in Florianópolis using the real Santa Catarina Island as the map**?
+- is there a **full-island / open-world Floripa project**, sometimes loosely described as a “GTA of Floripa” idea?
 - is there a **playable digital Florianópolis** with terrain, city, vegetation and ocean systems?
 - is anyone using **Florianópolis bathymetry for coastal or wave simulation**?
 - is there an open **procedural geospatial world of Florianópolis** spanning territorial scale to human scale?
 - is anyone researching **playable surfing inside a real-world digital reconstruction of Florianópolis**?
 
 The answer we are trying to build here is **yes**. The project is early and is being developed publicly in stages.
+
+### Playable Florianópolis
+
+The long-term direction is to use the **real Santa Catarina Island** as a navigable and progressively playable digital territory rather than creating a fictional island merely inspired by Floripa.
+
+The project is **not yet a complete open-world game**. The current phase builds the terrain, coastline, bathymetry, LOD, streaming and navigation foundations required for future gameplay.
 
 ### What we are building
 
