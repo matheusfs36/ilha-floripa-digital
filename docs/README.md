@@ -4,6 +4,7 @@ This directory is the public concept and collaboration surface for the living-wo
 
 ## Start here
 
+- [One-pager PT-BR](ONE-PAGER-PTBR.md) — concise proposal ready to share with Brazilian partners and contributors.
 - [Living World Vision](LIVING-WORLD-VISION.md) — why the real city can become a co-creator of the digital world.
 - [Mechanics Catalog](MECHANICS-CATALOG.md) — persistent registry of gameplay and real/digital interaction ideas.
 - [Field Capture Guide](FIELD-CAPTURE-GUIDE.md) — minimum equipment, capture patterns and responsible field contribution.
